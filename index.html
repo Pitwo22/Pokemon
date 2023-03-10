@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap" rel="stylesheet">
+
+    <link rel="shortcut icon" href="./src/imagens/favi.ico" type="image/x-icon">
+
+
+    <link rel="stylesheet" href="./src/css/estilos.css">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+    <script src="./pokedex.html"></script>
+    <script src="./src/js/script.js"></script>
+
+    <title>Pokemon </title>
+</head>
+
+
+<body>
+    <div class="fundo-video">
+
+        <video class="video" autoplay loop muted>
+            <source src="./src/imagens/videofundo.mp4" type="video/mp4">
+    </div>
+
+    <header class="cabecalho">
+
+        <a>
+
+            <img class="logo" src="./src/imagens/cabecalho.png" onclick="botaoHome()" alt="Ash com o Pikachu">
+
+
+            
+
+
+        </a>
+
+        <nav>
+
+            <ul class="menu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#">Detalhes</a></li>
+                <!-- <li><a href="./pokedex.html">Pokedex</a> </li>
+ -->
+                <img class="pokeAgenda" src="./src/imagens/pokedex/pokedexcabecalho.png" onclick="botaoAgenda()" alt="Poke-Agenda">
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main class="container">
+        <div class="informacoes">
+
+            <img class="imagem-titulo" onclick="botaoHome()" src="./src/imagens/imagem-titulo.png" alt="imagem do título do filme">
+
+            <p class="descricao">O anime conta a história de Ash Ketchum, uma criança que desde que completou dez anos,
+                idade com a qual pode receber uma licença de treinador de pokémons, viaja através de diferentes regiões
+                capturando novos pokémons e treinando-os para se tornar "o maior mestre pokémon". Em cada região
+                participa da respectiva liga pokémon, na qual deve derrotar em batalhas um determinado número de líderes
+                de "ginásio pokémon" de diferentes cidades para poder competir no campeonato regional.</p>
+
+            <button class="botao-trailer">Veja o Trailer</button>
+        </div>
+        <img class="pokemon" src="./src/imagens/imagem-centro.png"
+            alt="Imagem que contem a turma de Ash e o seu amigo Pikachu">
+
+
+        <div class="modal">
+            <div class="conteudo-modal">
+                <span class="fechar-modal">X</span>
+
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/dSnGOxOQfoA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+        <aside class="menu-lateral">
+            <ul>
+
+                <li class="instagram">
+                    <a href="https://www.instagram.com/pitwo22/" target="_blank">
+                        <img class="icone" src="./src/imagens/instagran.png" alt="imagem do Instagram"></a></li>
+
+                <li class="github"><a href="https://github.com/Pitwo22" target="_blank"><img class="icone"
+                            src="./src/imagens/github.svg" alt="icone github"></a></li>
+
+                <li class="linkdln">
+                    <a href="https://www.linkedin.com/in/cristian-p2/" target="_blank"><img class="icone"
+                            src="./src/imagens/linkedin-in.svg" alt="icone linkdln"></a>
+                </li>
+
+            </ul>
+        </aside>
+
+    </main>
+
+    <script src="./src/js/index.js"></script>
+</body>
+
+</html>

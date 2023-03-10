@@ -1,0 +1,104 @@
+/* A classe responsivo, serve para formatar o site para telas de celulares */
+
+
+@media (max-width: 1200px) {
+
+    /* para todo dispositivo que tem uma tela menor de 1200 px*/
+    body {
+        background-color:
+            #3d68bb;
+        /* caso quando minimiza a janela, ficara a cor assim */
+    }
+
+    .fundo-video {
+        display: none;
+    }
+
+    .container {
+        flex-wrap: wrap;
+        /* se nao tem elementos na tela, joga o elemento para baixo */
+
+        justify-content: center;
+        height: auto;
+        gap: 30px;
+        /*separar os elementos que estavam todos juntinhos */
+    }
+
+    .container .mario {
+        max-width: 50%;
+    }
+
+    .container .informacoes {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .container .descricao {
+        color: #ffffff;
+        text-align: center;
+
+    }
+
+    .container .botao-trailer {
+        background-color: #263238;
+    }
+}
+
+@media (max-width: 500px) {
+    /* para telas que possui uma qualidade abaixo de 500 px */
+
+    .cabecalho {
+        flex-wrap: wrap;
+        justify-content: center;
+        /* centralizar os elementos */
+        gap: 10px;
+        /*separar os elementos que estavam todos juntinhos */
+
+    }
+
+    .container .imagem-titulo {
+        max-width: 75%;
+    }
+
+    .modal.fechar-modal {
+
+        width: 30px;
+        line-height: 30px;
+    }
+
+    .modal #video {
+        width: 300px;
+        height: 169px;
+    }
+
+    .menu-lateral{
+        position: static;
+        min-height: auto;
+        width: 100%;
+        margin-top: 50px;
+    }
+    .menu-lateral ul{
+        flex-direction: row;
+    }
+
+}
+
+@media (max-widht: 376px) {
+
+    /* para celulares com tela menor que 376 pixels */
+    .modal #video {
+        width: 250px;
+        height: 140px;
+    }
+
+    .menu-lateral{
+        position: static;
+        min-height: auto;
+        width: 100%;
+        margin-top: 50px;
+    }
+    .menu-lateral ul{
+        flex-direction: row;
+    }
+}
